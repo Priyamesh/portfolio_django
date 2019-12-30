@@ -2,12 +2,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Album example · Bootstrap</title>
+    <title>PRIYAMESH GUPTA</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -46,15 +47,15 @@
   <body>
     <header> 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">PRIYAMESH GUPTA</a>
+            <a class="navbar-brand" href="{% url 'home' %}">PRIYAMESH GUPTA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="#">Twitter</a>
-                <a class="nav-item nav-link" href="#">Resume</a>
-                <a class="nav-item nav-link" href="#">Blogs</a>
+                <a class="nav-item nav-link" href="https://www.linkedin.com/in/priyamesh-gupta-a21647146/">LinkedIN</a>
+                <a class="nav-item nav-link" href="{% static 'priyamesh resume new.pdf' %}">Resume</a>
+                <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blogs</a>
                 <a class="nav-item nav-link" href="#">Fun Zone</a>
             </div>
             </div>
@@ -69,8 +70,8 @@
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
       <p>
         <a href="mailto:priyamesh28@gmail.com" class="btn btn-primary my-2">E-mail Me</a>
-        <a href="#" class="btn btn-secondary my-2">Text Me</a>
-      </p>
+        </p>
+      <img class="img-fluid" src="{% static 'Photo 21-11-19, 2 59 59 PM.jpg' %}" height="500" width="500" />
     </div>
   </section>
  
@@ -98,7 +99,7 @@
 
 <footer class="text-muted">
   <div class="container text-center">
-      <p> CopyRight Priyamesh Gupta {% now "y" %}</p>
+      <p> CopyRight Priyamesh Gupta {%  now "y" %}</p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
